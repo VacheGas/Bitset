@@ -15,7 +15,8 @@ public:
 	}
 	
 	void fix(int idx) {
-		if ((m_bitset[idx] == 0 && m_reverse == false) || (m_bitset[idx] == 1 && m_reverse == true)) {
+		if ((m_bitset[idx] == 0 && m_reverse == false) \
+        || (m_bitset[idx] == 1 && m_reverse == true)) {
 			++m_count_one;
 			m_bitset[idx] = (m_reverse) ? 0 : 1;
 		}
